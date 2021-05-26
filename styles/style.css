@@ -34,6 +34,13 @@ h4,
 h5,
 h6 {
     font-family: KGSecondChangesSolid;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -41,7 +48,7 @@ body {
 }
 
 section {
-    padding: 15px 0;
+    padding: 25px 0;
 }
 
 /* Navbar */
@@ -93,28 +100,36 @@ section {
 /* Section OurMission */
 
 .ourMision {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     background-color: #ebe8de;
 }
 
 .ourMision__video {
-    width: 100%;
-    height: 100%;
-    background-color: darkgray;
+    width: 450px;
+    height: 300px;
+    background-color: #393636;
     margin: 0px 20px;
+    order: 2;
 }
 
-.title {
-    width: 100%;
+.ourMision-title {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: 200px;
     height: 50px;
     line-height: 50px;
     border-radius: 50px;
     font-size: 20px;
     text-align: center;
     background-color: var(--btn-green);
+}
+
+.bullets__container {
+    margin: 50px 0 0 40px;
 }
 
 .green {
@@ -134,7 +149,6 @@ section {
 
 .bullet {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -147,7 +161,6 @@ section {
 .bullet p {
     margin-top: 10px;
     font-size: 0.8rem;
-    text-align: center;
     color: var(--btn-purple);
     font-weight: 500;
 }
@@ -178,15 +191,32 @@ section {
     z-index: -1;
 }
 
+.whatIs__container {
+    display: flex;
+}
+
+.whatIs-title {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--btn-purple);
+}
+
 .whatIs-p {
     text-align: center;
     font-weight: lighter;
-    margin: 15px 0;
+    margin-top: 90px;
 }
 
 .whatIs-draw {
-    width: 100%;
-    height: 100%;
+    width: 40%;
+    height: 40%;
 }
 
 /* Section flexibleCurriculum */
@@ -321,5 +351,117 @@ footer {
 
     .header__bottom-btn {
         width: 280px;
+    }
+
+    /* Section OurMission */
+
+    .ourMision {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ebe8de;
+    }
+
+    .ourMision__video {
+        width: 100%;
+        height: 100%;
+        background-color: #393636;
+        margin: 0px 20px;
+        order: 1;
+    }
+
+    .ourMision-title {
+        position: absolute;
+        top: 20;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: var(--btn-green);
+    }
+
+    .green {
+        background-color: var(--btn-green);
+        color: var(--header-bottom);
+    }
+
+    .purple {
+        background-color: var(--btn-purple);
+        color: var(--white);
+    }
+
+    .orange {
+        background-color: var(--btn-orange);
+        color: var(--header-bottom);
+    }
+
+    .bullet {
+        justify-content: flex-start;
+    }
+
+    .bullets__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        padding: 40px 0;
+    }
+
+    /* Section WhatIs */
+    .whatIs {
+        padding: 20px 10px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        color: var(--white);
+        background-color: rgba(75, 194, 183, 1);
+        z-index: 0;
+    }
+
+    .whatIs:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("../img/PNGs/Pink pattern.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.05;
+        z-index: -1;
+    }
+
+    .whatIs__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .whatIs-title {
+        position: absolute;
+        top: 20;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: var(--btn-purple);
+    }
+
+    .whatIs-p {
+        text-align: center;
+        font-weight: lighter;
+        margin-top: 70px;
+    }
+
+    .whatIs-draw {
+        display: none;
     }
 }
