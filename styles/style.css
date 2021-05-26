@@ -193,6 +193,7 @@ section {
 
 .whatIs__container {
     display: flex;
+    align-items: center;
 }
 
 .whatIs-title {
@@ -209,9 +210,9 @@ section {
 }
 
 .whatIs-p {
-    text-align: center;
     font-weight: lighter;
     margin-top: 90px;
+    margin-left: 50px;
 }
 
 .whatIs-draw {
@@ -222,17 +223,42 @@ section {
 /* Section flexibleCurriculum */
 .flexibleCurriculum {
     background-color: var(--back-purple);
+    position: relative;
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.flexibleCurriculum__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .flexibleCurriculum__card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 250px;
     text-align: center;
     color: var(--white);
     padding: 10px 10px;
+    margin: 25px;
+}
+
+.flexibleCurriculum__title {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--btn-orange);
+}
+
+.card__title {
+    margin: 15px;
 }
 
 .card__icon {
@@ -272,20 +298,42 @@ section {
     width: 100%;
     display: grid;
     grid-gap: 25px;
-    grid-template-columns: 250px;
+    grid-template-columns: repeat(3, 200px);
     justify-content: center;
     align-items: center;
+    margin: 50px 0;
 }
 
 .images__grid-card {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 /* Section howWork */
 .howWork {
     background-color: var(--back-lightblue);
     padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.howWork__title {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--back-purple);
+}
+
+#carouselExampleFade {
+    margin: 90px 120px 50px;
 }
 
 /* footer */
@@ -294,10 +342,9 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
     background-color: var(--header-bottom);
     color: var(--white);
-    height: 200px;
+    height: 100px;
 }
 
 .footer__bottom-h1 {
@@ -412,30 +459,6 @@ footer {
     }
 
     /* Section WhatIs */
-    .whatIs {
-        padding: 20px 10px;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        color: var(--white);
-        background-color: rgba(75, 194, 183, 1);
-        z-index: 0;
-    }
-
-    .whatIs:after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: url("../img/PNGs/Pink pattern.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 0.05;
-        z-index: -1;
-    }
 
     .whatIs__container {
         display: flex;
@@ -459,9 +482,92 @@ footer {
         text-align: center;
         font-weight: lighter;
         margin-top: 70px;
+        margin-left: 0;
     }
 
     .whatIs-draw {
         display: none;
+    }
+
+    /* Section flexibleCurriculum */
+    .flexibleCurriculum__container {
+        margin-top: 40px;
+    }
+
+    .flexibleCurriculum__card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .flexibleCurriculum__title {
+        position: absolute;
+        top: 20;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: var(--btn-orange);
+    }
+
+    /* Section images */
+
+    .images__grid {
+        width: 100%;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images__grid-card {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Section howWork */
+    .howWork {
+        background-color: var(--back-lightblue);
+        padding: 10px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .howWork__title {
+        position: absolute;
+        top: 20;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50px;
+        font-size: 20px;
+        text-align: center;
+        background-color: var(--back-purple);
+    }
+
+    #carouselExampleFade {
+        margin: 90px 10px 20px;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: var(--header-bottom);
+        color: var(--white);
+        height: 200px;
     }
 }
