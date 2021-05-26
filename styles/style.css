@@ -13,7 +13,9 @@
 :root {
     --navbar: #66cbbb;
     --header-bottom: #59164a;
-    --btn: #afdb23;
+    --btn-green: #b7e800;
+    --btn-purple: #59164a;
+    --btn-orange: #f59117;
     --white: #ffffff;
 }
 
@@ -23,9 +25,20 @@
     box-sizing: border-box;
 }
 
-body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: KGSecondChangesSolid;
 }
+
+body {
+    font-family: Raleway;
+}
+
+/* Navbar */
 
 .navbar {
     background-color: var(--navbar);
@@ -40,9 +53,11 @@ body {
     margin: 0;
 }
 
+/* Section Header */
+
 .header {
     width: 100%;
-    height: 400px;
+    height: 200px;
 }
 
 .header .header__banner {
@@ -61,6 +76,74 @@ body {
     height: 200px;
 }
 
+.header__bottom-h1 {
+    font-size: 1rem;
+}
+
 .header__bottom-btn {
     width: 280px;
 }
+
+/* Section OurMission */
+
+section .ourMision {
+    background-color: #ebe8de;
+}
+
+.ourMision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px 10px;
+}
+
+.ourMision__title {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--header-bottom);
+}
+
+.green {
+    background-color: var(--btn-green);
+}
+
+.purple {
+    background-color: var(--btn-purple);
+}
+
+.orange {
+    background-color: var(--btn-orange);
+}
+
+.ourMision__video {
+    width: 100%;
+    height: 100%;
+    background-color: darkgray;
+}
+
+.bullet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bullet-icon {
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/PNGs/Asset-01.png");
+}
+
+.bullet p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--btn-purple);
+    font-weight: 500;
+}
+
+/* Section WhatIs */
