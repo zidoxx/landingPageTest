@@ -98,26 +98,29 @@ section .ourMision {
     margin: 15px 10px;
 }
 
-.ourMision__title {
-    width: 150px;
+.tittle {
+    width: 100%;
     height: 50px;
     line-height: 50px;
     border-radius: 50px;
     font-size: 20px;
     text-align: center;
-    color: var(--header-bottom);
+    background-color: var(--btn-green);
 }
 
 .green {
     background-color: var(--btn-green);
+    color: var(--header-bottom);
 }
 
 .purple {
     background-color: var(--btn-purple);
+    color: var(--white);
 }
 
 .orange {
     background-color: var(--btn-orange);
+    color: var(--header-bottom);
 }
 
 .ourMision__video {
@@ -147,3 +150,40 @@ section .ourMision {
 }
 
 /* Section WhatIs */
+.whatIs {
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: var(--white);
+    background-color: rgba(75, 194, 183, 1);
+    z-index: 0;
+}
+
+.whatIs:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/PNGs/Pink pattern.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.whatIs-p {
+    text-align: center;
+    font-weight: lighter;
+    margin: 15px 0;
+}
+
+.whatIs-draw {
+    width: 100%;
+    height: 100%;
+}
+
+/* Section flexibleCurriculum */
