@@ -259,3 +259,21 @@ section {
 }
 
 /* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--header-bottom);
+    color: var(--white);
+    height: 200px;
+}
+
+.footer__bottom-h1 {
+    font-size: 1rem;
+}
+
+.footer__bottom-btn {
+    width: 280px;
+}
