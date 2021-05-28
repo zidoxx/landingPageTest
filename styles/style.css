@@ -126,6 +126,12 @@ section {
     font-size: 20px;
     text-align: center;
     background-color: var(--btn-green);
+    transition: all 0.7;
+}
+
+.ourMision-title:hover {
+    background-color: var(--btn-purple);
+    color: var(--btn-green);
 }
 
 .bullets__container {
@@ -430,6 +436,7 @@ footer {
         font-size: 20px;
         text-align: center;
         background-color: var(--btn-green);
+        transition: 0.7;
     }
 
     .green {
